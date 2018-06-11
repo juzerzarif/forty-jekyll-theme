@@ -346,6 +346,9 @@
 							$menu._hide();
 
 				});
+			
+		//Carousel
+			$('.carousel').carousel('pause');
 
 	});
 

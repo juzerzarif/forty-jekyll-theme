@@ -1,0 +1,74 @@
+- position: President
+  name: Juzer Zarif
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/president.jpg
+
+- position: Vice President
+  name: Dylan Sims-West
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/vice-president.jpg
+
+- position: Secretary
+  name: Truman Peters
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/default.jpg
+
+- position: Treasurer
+  name: Isaiah Cacka
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/treasurer.jpg
+
+- position: Hall Historian
+  name: Sam Blaufuss
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/historian.jpg
+
+- position: ASHC Representative
+  name: Elliot Banker-Sumner
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/default.jpg
+
+- position: Social Chair
+  name: Drake Cartwright
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/social-chair1.jpg
+
+- position: Social Chair
+  name: Leo Praderas
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/social-chair2.jpg
+
+- position: Newman Social Chair
+  name: 
+  description: 
+  image: /assets/images/exec/default.jpg
+
+- position: Sports Chair
+  name: Jake Masuch
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/sports-chair.jpg
+
+- position: Newman Sports Chair
+  name: 
+  description: 
+  image: /assets/images/exec/default.jpg
+
+- position: Health Officer
+  name: Mitchell Menner
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/health-officer.jpg
+
+- position: Environmental & Multicultural Chair
+  name: Pedro Zuriel Martinez
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/env-mc-chair.jpg
+
+- position: Community Service Chair
+  name: Gabriel Mariscal Caruso
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/comm-service-chair.jpg
+
+- position: ARC Chair
+  name: Anas Kashif
+  description: Cat ipsum dolor sit amet, pushes butt to face lick left leg for ninety minutes, still dirty sit in window and stare oooh, a bird, yum brown cats with pink ears. Meow open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!
+  image: /assets/images/exec/arc-chair.jpg

@@ -1,9 +1,9 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hi, my name is Forty'
-description: null
-image: null
+landing-title: 'Stephenson Scholarship Hall'
+description: Cat ipsum dolor sit amet, eat all the power cords. Eat grass, throw it back up be a nyan cat, feel great about it, be annoying 24/7 poop rainbows in litter box
+image: /assets/images/home-bg.jpg
 author: null
 ---
 
