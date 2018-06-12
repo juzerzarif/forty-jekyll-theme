@@ -18,9 +18,12 @@
 	    	{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
-		    {% if page.layout != "home" and page.nav-menu == true %}
-		        <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+		{% assign count = forloop.index %}
+		{% for section in site.pages %}
+		    {% if section.layout != "home" and section.nav-menu == true and section.order==count %}
+		        <li><a href="{{ section.url | absolute_url }}">{{ section.title }}</a></li>
 		    {% endif %}
+		{% endfor %}
 		{% endfor %}
 	</ul>
 	<ul class="actions vertical">
