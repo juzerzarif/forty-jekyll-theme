@@ -1,50 +1,53 @@
-.exec-box {
+.photo-box {
     padding: 2em 2em;
     border-bottom: 1px solid rgba(255,255,255, 0.5);
     border-right: 1px solid rgba(255,255,255,0.5);
 }
-.exec-box:nth-of-type(3n) {
+.photo-box:nth-of-type(3n) {
     border-right: none;
 }
-.exec-box.last-row {
+.photo-box.last-row {
     border-bottom: none;
 }
 @media screen and (max-width: 736px) {
-    .exec-box {
+    .photo-box {
         border-right: none;
     }
-    .exec-box.last-row {
+    .photo-box.last-row {
         border-bottom: 1px solid rgba(255,255,255, 0.5);
     }
-    .exec-box:last-of-type {
+    .photo-box:last-of-type {
         border-bottom: none;
+    }
+    .row {
+        margin-left: auto;
     }
 }
 
-.exec-box h1, 
-.exec-box h2, 
-.exec-box h3, 
-.exec-box h4, 
-.exec-box h5, 
-.exec-box h6,
-.exec-box p {
+.photo-box h1, 
+.photo-box h2, 
+.photo-box h3, 
+.photo-box h4, 
+.photo-box h5, 
+.photo-box h6,
+.photo-box p {
     margin: 0 0;
     text-align: center;
 }
 
-.exec-box .image.fit {
+.photo-box .image.fit {
     margin: 0 0 1em 0;
     overflow: hidden;
 }
 
-.exec-box .image.fit img {
+.photo-box .image.fit img {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     object-fit: cover;
     object-position: center;
 }
-.exec-box .image.fit:hover img {
+.photo-box .image.fit:hover img {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);

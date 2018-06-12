@@ -1,0 +1,70 @@
+---
+layout: page
+---
+
+<div id="main" class="alt">
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+        </div>
+    </section>
+    
+    {% if page.content != "" %}
+    <section id="two">
+        <div class="inner">
+            <p>{{ content }}</p>
+            <ul class="actions">
+                <li><a href="#three" class="button next scrolly">Learn More</a></li>
+            </ul>
+        </div>
+    </section>
+    {% endif %}
+    
+    <section id="three">
+        <div class="inner">
+            <div class="row">
+            {% for member in site.data[page.data-file-name] %}
+            {% assign n = forloop.index | modulo: 3 %}
+            {% assign rem = forloop.length | modulo: 3 %}
+            {% assign last3 = forloop.length | minus: 3 %}
+            {% assign lastn = forloop.length | minus: rem %}
+                {% if n==0 %}
+                {% if rem==0 and forloop.last %}
+                <div class="4u$ 12u$(small) photo-box last-row">
+                {% else %}
+                <div class="4u$ 12u$(small) photo-box">
+                {% endif %}
+                {% else %}
+                {% if rem==0 and forloop.index > last3 %}
+                <div class="4u 12u$(small) photo-box last-row">
+                {% elsif rem!=0 and forloop.index > lastn %}
+                <div class="4u 12u$(small) photo-box last-row">
+                {% else %}
+                <div class="4u 12u$(small) photo-box">
+                {% endif %}
+                {% endif %}
+                <span class="image fit"><img src="{{ member.image | absolute_url }}" class="leader-image"/></span>
+                <h3>{{member.position}}</h3>
+                <h4>{{member.name}}</h4>
+                <p>{{member.description}}</p>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+    </section>
+    <script>
+        function resizeHandler(){
+            var images = document.getElementsByClassName("leader-image");
+            for(var i=0; i<images.length; i++)
+            {
+                var w = images[i].clientWidth;
+                images[i].style.height = w+"px";
+            }
+        }
+        
+        window.addEventListener('resize', resizeHandler);
+        window.addEventListener('load', resizeHandler);
+    </script>
+    </div>
