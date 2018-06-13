@@ -111,10 +111,8 @@
 </div>
 
 <!-- Scripts -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-	<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+	<!-- <script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script> -->
+	<script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 	<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
 	<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
 	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
@@ -123,7 +121,29 @@
 	<script>
 		$(function(){
 			$(".carousel-item").first().addClass("active");
+			//$(".carousel").carousel('pause')
 		});
 	</script>
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 	<script src="{{ "assets/js/contact.js" | absolute_url }}"></script>
+	{% if page.url contains "rooms" or page.url contains "gallery" %}
+	<script src="{{ "assets/lightbox-dist/js/lightbox-plus-jquery.min.js" | absolute_url }}"></script>
+	<script>
+		lightbox.option({
+			wrapAround: true
+		})
+	</script>
+	<script>
+		function resizeHandler(){
+            var images = document.getElementsByClassName("lb-image");
+            for(var i=0; i<images.length; i++)
+            {
+                var w = images[i].clientWidth;
+                images[i].style.height = w+"px";
+            }
+        }
+        
+        window.addEventListener('resize', resizeHandler);
+        window.addEventListener('load', resizeHandler);
+	</script>
+	{% endif %}

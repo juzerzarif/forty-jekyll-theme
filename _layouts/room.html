@@ -1,0 +1,51 @@
+---
+layout: page
+---
+
+<div id="main" class="alt">
+
+        <!-- One -->
+    <section id="one">
+        <div class="inner">
+            <header class="major">
+                <h1>{{ page.landing-title }}</h1>
+            </header>
+        </div>
+    </section>
+        
+    <section id="two">
+        <div class="inner">
+            <div class="roomCarousel row">
+            {% for room in site.data.rooms %}
+            {% assign n4 = forloop.index | modulo: 4 %}
+            {% assign n2 = forloop.index | modulo: 2 %}
+                {% if n4==0 and n2==0 %}
+                <div class="3u$ 6u$(small)">
+                {% elsif n4!=0 and n2==0 %}
+                <div class="3u 6u$(small)">
+                {% else %}
+                <div class="3u 6u(small)">
+                {% endif %}
+                <span class="image fit">
+                <a class="room-image-link" href="{{ room.image | absolute_url }}" data-lightbox="room-set" data-title="{{room.description}}">
+                    <img class="lb-image" src= "{{ room.image | absolute_url }}" alt="slide">
+                </a>
+                </span>
+                </div>
+            {% endfor %}		
+            </div>
+            <style>
+            .lb-image {
+                object-fit: cover;
+                object-position: center;
+            }
+            </style>
+        </div>
+    </section>
+        
+    <section id="three">
+        <div class="inner">
+        {{ content }}
+        </div>
+    </section>
+</div>

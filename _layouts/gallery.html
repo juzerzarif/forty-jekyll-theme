@@ -1,0 +1,39 @@
+---
+layout: page
+---
+
+<div id="main" class="alt">
+        <section id="one">
+            <div class="inner">
+                <header class="major">
+                    <h1>{{ page.landing-title }}</h1>
+                </header>
+                <p>{{ content }}</p>
+            </div>
+        </section>
+        <section id="two">
+            <div class="inner">
+            <div class="row">
+            {% for image in site.static_files %}
+            {% if image.path contains "assets/images/gallery/" %}
+            {% if image.path contains ".jpg" or image.path contains ".png" %}
+            <div class="3u 6u(small)">
+                <span class="image fit">
+                    <a class="gallery-image-link" href="{{ image.path | absolute_url }}" data-lightbox="gallery-set" data-title="">
+                    <img class="lb-image" src="{{ image.path | absolute_url }}" alt="slide"/>
+                    </a>
+                </span>
+            </div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+            </div>
+            </div>
+            <style>
+            .lb-image {
+                object-fit: cover;
+                object-position: center;
+            }
+            </style>
+        </section>
+    </div>

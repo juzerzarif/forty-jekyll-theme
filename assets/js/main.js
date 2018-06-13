@@ -348,7 +348,7 @@
 				});
 			
 		//Carousel
-			$('.carousel').carousel('pause');
+			// $('.carousel').carousel('pause');
 
 	});
 
