@@ -103,7 +103,8 @@
 				<li>&copy; {{ site.title }} {{ site.subtitle }}</li>
 				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
 				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-
+				<li>Customization: <a href="http://juzerzarif.com" target="_blank">Juzer Zarif</a></li>
+				<li>Images: <a href="{{ site.artist_link }}" target="_blank">{{ site.artist }}</a></li>
 			</ul>
 		</div>
 	</footer>
@@ -118,12 +119,6 @@
 	<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
 	<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/respond.min.js" | absolute_url }}"></script><![endif]-->
-	<script>
-		$(function(){
-			$(".carousel-item").first().addClass("active");
-			//$(".carousel").carousel('pause')
-		});
-	</script>
 	<script src="{{ "assets/js/main.js" | absolute_url }}"></script>
 	<script src="{{ "assets/js/contact.js" | absolute_url }}"></script>
 	{% if page.url contains "rooms" or page.url contains "gallery" %}
@@ -132,18 +127,5 @@
 		lightbox.option({
 			wrapAround: true
 		})
-	</script>
-	<script>
-		function resizeHandler(){
-            var images = document.getElementsByClassName("lb-image");
-            for(var i=0; i<images.length; i++)
-            {
-                var w = images[i].clientWidth;
-                images[i].style.height = w+"px";
-            }
-        }
-        
-        window.addEventListener('resize', resizeHandler);
-        window.addEventListener('load', resizeHandler);
 	</script>
 	{% endif %}

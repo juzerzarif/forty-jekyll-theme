@@ -28,18 +28,14 @@ layout: page
                 {% endif %}
                 <span class="image fit">
                 <a class="room-image-link" href="{{ room.image | absolute_url }}" data-lightbox="room-set" data-title="{{room.description}}">
-                    <img class="lb-image" src= "{{ room.image | absolute_url }}" alt="slide">
+                <div class="sq-image">
+                    <img class="lb-image lazy" src= "{{ room.image | absolute_url }}" alt="slide">
+                </div>
                 </a>
                 </span>
                 </div>
             {% endfor %}		
             </div>
-            <style>
-            .lb-image {
-                object-fit: cover;
-                object-position: center;
-            }
-            </style>
         </div>
     </section>
         

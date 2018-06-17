@@ -2,17 +2,25 @@
 	<title>{{ site.title }}</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="shortcut icon" href="{{ "favicon.ico" | relative_url }}" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<!--[if lte IE 8]><script src="{{ "assets/js/ie/html5shiv.js" | relative_url }}"></script><![endif]-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="{{ "assets/css/ie9.css" | relative_url }}" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="{{ "assets/css/ie8.css" | relative_url }}" /><![endif]-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{ "assets/css/carousel-override.css" | relative_url }}" />
 	{% if page.url contains "exec" or page.url contains "staff" %}
 	<link rel="stylesheet" href="{{ "assets/css/leadership.css" | relative_url }}" />
 	{% endif %}
 	{% if page.url contains "rooms" or page.url contains "gallery" %}
 	<link rel="stylesheet" href="{{ "assets/lightbox-dist/css/lightbox.min.css" | relative_url }}" />
+	<link rel="stylesheet" href="{{ "assets/css/squarify.css" | relative_url }}" />
 	{% endif %}
 </head>

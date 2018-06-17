@@ -102,6 +102,7 @@
 			$body.addClass('is-loading');
 
 			$window.on('load pageshow', function() {
+				console.log("Window load test");
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 100);
@@ -149,7 +150,7 @@
 				// Image.
 
 					// Set image.
-						$this.css('background-image', 'url(' + $img.attr('src') + ')');
+						$this.css('background-image', 'radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(' + $img.attr('src') + ')');
 
 					// Set position.
 						if (x = $img.data('position'))

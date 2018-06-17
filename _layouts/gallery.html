@@ -20,7 +20,9 @@ layout: page
             <div class="3u 6u(small)">
                 <span class="image fit">
                     <a class="gallery-image-link" href="{{ image.path | absolute_url }}" data-lightbox="gallery-set" data-title="">
-                    <img class="lb-image" src="{{ image.path | absolute_url }}" alt="slide"/>
+                    <div class="sq-image">
+                        <img class="lb-image" src="{{ image.path | absolute_url }}" alt="slide"/>
+                    </div>
                     </a>
                 </span>
             </div>
@@ -29,11 +31,5 @@ layout: page
             {% endfor %}
             </div>
             </div>
-            <style>
-            .lb-image {
-                object-fit: cover;
-                object-position: center;
-            }
-            </style>
         </section>
     </div>
